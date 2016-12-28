@@ -1,0 +1,451 @@
+/* Large Devices Styles Starts */
+
+@media (min-width: 1200px) {
+
+/* Tooltip Styles Starts */
+	
+	.header-links .tooltip{
+		display:none !important;
+	}
+	
+/* Main Menu Styles Starts */
+
+	#main-menu{
+		position:absolute;
+		top:15%;
+		left:0;
+		right:0;
+	}
+	.header-wrap.inner #main-menu{
+		top:25%;
+	}
+		#main-menu .navbar-nav, 
+		#main-menu .navbar-nav > li{
+			float:none;			
+		}
+		#main-menu .navbar-nav > li{
+			display:inline-block;
+		}
+		#main-menu .navbar-nav > li + li > a:before{
+			content:"|";
+			padding-right:20px;
+		}
+	
+}
+
+/* Medium Devices Styles Starts */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* Tooltip Styles Starts */
+	
+	.header-links .tooltip{
+		display:none !important;
+	}
+	
+/* Logo Wrap Styles Starts */
+
+	.logo-wrap{
+		bottom:100px;
+	}
+	.header-wrap.inner .logo-wrap{
+		bottom:10px;
+	}
+		.logo-wrap h1{
+			font-size:130px;
+		}
+		.logo-wrap h2{
+			font-size:70px;
+		}
+		
+/* Main Menu Styles Starts */
+
+	#main-menu{
+		position:absolute;
+		top:15%;
+		left:0;
+		right:0;
+	}
+	.header-wrap.inner #main-menu{
+		top:28%;
+	}	
+		#main-menu .navbar-nav, 
+		#main-menu .navbar-nav > li{
+			float:none;			
+		}
+		#main-menu .navbar-nav > li{
+			display:inline-block;
+		}
+		#main-menu .navbar-nav > li + li > a:before{
+			content:"|";
+			padding-right:20px;
+		}		
+		
+/* Products Box Styles */
+
+	.product-col.list .image{
+		padding:40px 30px 10px 0;
+	}
+	.product-col .btn{	
+		margin-top:5px;
+	}
+	
+/* Product Carousel Styles Starts */	
+
+	.product-carousel .owl-controls .owl-buttons .owl-prev{
+		left:89%;
+	}		
+
+/* Footer Links Styles Starts */
+
+	.footer-links h5{
+		margin:10px 0;
+	}
+
+/* Copyright Styles Starts */
+	
+	.copyright{
+		font-size:13px;
+	}
+		.copyright p.pull-left, .copyright ul{
+			text-align:center;
+			float:none !important;
+		}
+
+}
+
+/* Small Devices Styles Starts */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+/* Logo Wrap Styles Starts */
+
+	.logo-wrap{
+		bottom:20px;
+	}	
+	.header-wrap.inner .logo-wrap{
+		bottom:0;
+	}
+		.logo-wrap h1{
+			font-size:120px;
+		}
+		.header-wrap.inner .logo-wrap h1{
+			font-size:80px;
+		}
+		.logo-wrap h2{
+			font-size:60px;
+		}
+
+/* Main Menu Styles Starts */
+
+	#main-menu{
+		position:absolute;
+		top:25%;
+		left:0;
+		right:0;
+	}
+	.header-wrap.inner #main-menu{
+		top:43%;
+	}	
+		#main-menu .navbar-nav, 
+		#main-menu .navbar-nav > li{
+			float:none;			
+		}
+		#main-menu .navbar-nav > li{
+			display:inline-block;
+		}
+		#main-menu .navbar-nav > li + li > a:before{
+			content:"|";
+			padding-right:15px;
+		}
+		#main-menu .navbar-nav > li > a{
+			padding-left:0;
+			font-size:26px;
+		}
+	
+/* Products Box Styles */
+
+	.product-col.list .image{
+		padding:40px 30px 10px 0;
+	}	
+	
+/* Product Carousel Styles Starts */	
+
+	.product-carousel .row{
+		margin-left:-3px;
+		margin-right:-3px;
+	}
+	.product-carousel .col-xs-12{
+		padding-left:0;
+		padding-right:0;
+	}
+	.product-carousel .owl-wrapper-outer{
+	}
+    .product-carousel #owl-product .item{
+		padding-left:3px;
+		padding-right:3px;
+		text-align:center;
+    }
+	.product-carousel .owl-controls .owl-buttons .owl-prev{
+		left:86%;
+	}
+	.product-col .btn-wishlist, 
+	.product-col .btn-compare{
+		margin-left:0;
+	}					
+	
+/* Side Products Lists Styles Starts */
+
+	.side-products-list h5,
+	.side-products-list .price{
+		float:none;
+	}
+	
+/* Pagination Styles Starts */
+
+	.pagination{
+		margin-bottom:15px; 
+	}
+	.results{	
+		padding-top:5px;
+	}
+	
+/* Footer Links Styles Starts */
+
+	.footer-links h5{
+		margin:10px 0;
+	}
+	
+/* Copyright Styles Starts */
+	
+	.copyright{
+		font-size:12px;
+	}
+		.copyright p.pull-left, .copyright ul{
+			text-align:center;
+			float:none !important;
+		}
+		
+/* Genric Styles Starts */
+
+	.img-center-sm{
+		margin-left:auto;
+		margin-right:auto;
+	}		
+	
+}
+
+/* Extra Small Devices Styles Starts */
+
+@media (max-width: 767px) {
+
+/* Responsive Image Styles Starts */
+
+	#logo .img-responsive, 
+	.col3-banners .img-responsive, 
+	.col2-banners .img-responsive, 
+	.product-col .img-responsive{
+		margin:0 auto;
+	}
+	
+/* Cart Style Starts */	
+
+	#cart .btn{
+		padding:5px 0;
+		text-align:center;
+	}	
+	
+/* Main Menu Styles Starts */
+
+	#main-menu{
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		background: #444;
+	}
+	#main-menu .navbar-toggle {
+		color:#fff;
+	}
+	#main-menu .navbar-toggle:focus {
+		color:#cb3737;
+	}
+	#main-menu{
+		z-index:9;
+	}
+	#main-menu .dropdown-inner ul {
+		display:block;
+	}
+	#main-menu .navbar-nav > li a{
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+
+/* Header Links Styles Starts */
+
+		.header-links ul.pull-left{
+			float:none !important;
+			text-align:center;
+		}
+			.header-links li a{	
+				padding:10px 3px;
+			}
+		
+/* Currency & Languages Drop Down Styles Starts */
+
+		.header-top .pull-right{
+			float:none !important;
+			text-align:center;
+		}
+			.header-top .btn-link{
+				margin:5px 0 0;
+			}
+			.header-top .dropdown-menu {
+				text-align:left;
+			}
+			
+/* Logo Wrap Styles Starts */
+
+	.logo-wrap{
+		bottom:40px;
+	}
+	.header-wrap.inner .logo-wrap{
+		bottom:0;
+	}	
+		.logo-wrap h1{
+			font-size:90px;
+		}
+		.logo-wrap h2{
+			font-size:60px;
+		}			
+			
+/* Slider Section Styles Starts */
+
+	#main-carousel .carousel-control .glyphicon {
+		font-size: 30px;
+	}	
+
+/* Latest Products Styles Starts */
+
+	.product-head, .product-col{
+		text-align:center;
+	}
+		.product-col.list .image{
+			float:none;
+			padding:0;
+		}
+		
+/* Product Carousel Styles Starts */	
+
+	.product-head{
+		font-size:18px;
+	}
+	#owl-product .owl-controls .owl-buttons .owl-prev, 
+	#owl-product .owl-controls .owl-buttons .owl-next{
+		top:-56px;
+		font-size:20px;
+	}
+	.product-carousel .owl-controls .owl-buttons .owl-prev{
+		left:15px;
+	}	 
+	.product-carousel .owl-controls .owl-buttons .owl-next{
+		right:20px;
+	}		
+			
+/* Three Column Banner Styles Starts */
+
+	.col3-banners{
+		margin-bottom:10px;
+	}
+		.col3-banners li + li{
+			margin-top:20px;
+		}
+
+/* Two Column Banner Styles Starts */
+
+	.col2-banners{
+		margin-bottom:10px;
+	}
+		.col2-banners li + li{
+			margin-top:20px;
+		}		
+		
+/* Page Content Styles Starts */
+
+	.page-box h3{
+		margin-top:20px;
+	}		
+	
+/* Tabs Styles Starts */
+
+	.tabs-panel .nav-tabs > li{
+		display:block;
+		float:none;
+	}
+	
+/* Pagination Styles Starts */
+
+	.pagination-block{
+		text-align:center;
+	}
+		.pagination{
+			margin-bottom:10px; 
+		}
+	.results{
+		text-align:center;
+		padding-top:0;
+		margin-bottom:15px;
+	}	
+
+/* Footer Links Styles Starts */
+	
+	.footer-links .col-sm-6, .footer-links .last{
+		text-align:center;
+	}
+	.footer-links .col-sm-6{
+		margin-bottom:20px;
+	}
+	.footer-links h5{
+		margin:10px 0;
+	}
+
+/* Copyright Styles Starts */
+	
+	.copyright{
+		font-size:11px;
+	}
+		.copyright p.pull-left, .copyright ul{
+			text-align:center;
+			float:none !important;
+		}
+			.copyright li{
+				padding:0 2px;
+			}
+			
+/* Genric Styles Starts */
+
+	.img-center-xs{
+		margin-left:auto;
+		margin-right:auto;
+	}			
+	
+}
+
+/* Extremely Small Devices Styles Starts */
+
+@media (max-width: 478px) {
+	
+	
+/* Logo Wrap Styles Starts */
+	
+	.logo-wrap{
+		bottom:10px;
+	}	
+		.logo-wrap h1{
+			font-size:60px;
+		}
+		.logo-wrap h2{
+			display:none;
+		}
+		
+}
