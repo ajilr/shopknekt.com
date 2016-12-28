@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Blank Template for Bootstrap</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      <section>
+        <div class="wizard">
+          <div class="wizard-inner">
+            <div class="connecting-line"></div>
+            <ul class="nav nav-tabs" role="tablist">
+
+              <li role="presentation" class="active">
+                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-folder-open"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                  </span>
+                </a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-picture"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-ok"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+          <form role="form">
+            <div class="tab-content">
+              <div class="tab-pane active" role="tabpanel" id="step1">
+                <h2 class="text-center">KYC FORM</h2>
+                <div class="col-md-4">
+                  <h5>Are You Assisted by an agent?</h5>
+                </div>
+                <div class="col-md-8">
+                  <label class="switch">
+                    <input type="checkbox" id="checkbox1" checked="checked" >
+                    <div class="slider"></div>
+                  </label>
+                </div>
+
+                <div class="form-group" data-pg-collapsed data-pg-hidden>
+                  <input type="text" class="form-control text-box" placeholder="Name">
+                </div>
+                <div class="form-group" data-pg-collapsed data-pg-hidden>
+                  <input type="text" class="form-control text-box" placeholder="Email Address">
+                </div>
+                <div class="form-group" data-pg-collapsed data-pg-hidden>
+                  <input type="text" class="form-control text-box" placeholder="Shop Name">
+                </div>
+                <div data-pg-collapsed class="col-md-6">
+                  <h4>Personal Info</h4>
+                  <div class="form-group" data-pg-collapsed data-pg-hidden>
+                    <input type="text" class="form-control text-box" placeholder="Name">
+                  </div>
+
+                  <div class="form-group" data-pg-collapsed data-pg-hidden>
+                    <input type="text" class="form-control  text-box" placeholder="Address" />
+                  </div>
+
+                  <div class="form-group" data-pg-collapsed data-pg-hidden>
+                    <input type="text" class="form-control text-box" placeholder="Phone Number">
+                  </div>
+                </div>
+
+                <div data-pg-collapsed class="col-md-6">
+                  <h4>Business Info</h4>
+                  <div class="form-group" data-pg-collapsed data-pg-hidden>
+                    <input type="text" class="form-control text-box" placeholder="Name">
+                  </div>
+
+                  <div class="form-group" data-pg-collapsed data-pg-hidden>
+                    <input type="text" class="form-control  text-box" placeholder="Address" />
+                  </div>
+
+                  <div class="form-group" data-pg-collapsed data-pg-hidden>
+                    <input type="text" class="form-control text-box" placeholder="Phone Number">
+                  </div>
+                </div>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="step2">
+                <h3>Step 2</h3>
+                <p>This is step 2</p>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                  <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="step3">
+                <h3>Step 3</h3>
+                <p>This is step 3</p>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                  <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                  <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="complete">
+                <h3>Complete</h3>
+                <p>You have successfully completed all steps.</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script>
+  $('#checkbox1').change(function(){
+    if (this.checked) {
+      $('#autoUpdate').fadeIn('slow');
+    } else {
+      $('#autoUpdate').fadeOut('slow');
+    }
+  });
+
+  </script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
