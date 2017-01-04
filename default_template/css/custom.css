@@ -96,7 +96,11 @@ color: #fff;
     background-color: #3498db;
     border-color: #3498db;
   }
-
+.z-danger-s:hover{
+  color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+}
   .z-war-s{
     color: #fff;
     background-color: #3498db;
@@ -203,4 +207,7 @@ border-color: #53A3CD;
 
 .z-tabpad{
   padding-top: 25px;
+}
+.btn-primary{
+  margin-top: 8px;
 }
