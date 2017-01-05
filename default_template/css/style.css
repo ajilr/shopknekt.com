@@ -808,7 +808,8 @@ h3.cate {
   border-radius: 0px;
 }
 
-.main .nav-tabs>li>a, .main .nav-tabs>li>a, .main .nav-tabs>li>a {
+
+.main .nav-tabs>li>a,  .main.nav-tabs>li>a, .main .nav-tabs>li>a {
   border: none!important;
   color: #000;
   font-weight: 600;
