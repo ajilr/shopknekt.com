@@ -565,7 +565,7 @@ a.cart {
 }
 .col-md1 {
     padding: 1em;
-    background-color: #eee;
+    ;
 }
 
 .col-md1:hover .price a {
@@ -700,7 +700,7 @@ span.price-in1 {
   padding: 1em 0 0;
 }
 .grid {
-  width: 67%;
+  width: 32%;
 }
 
 /*--product--*/
@@ -708,7 +708,7 @@ span.price-in1 {
   font-size: 1.8em;
 }
 .products {
-  padding: 1.5em 0;
+  padding: 76px;
 }
 h3.cate {
   font-size: 1.2em;
@@ -761,7 +761,7 @@ h3.cate {
   padding: 0;
 }
 .single {
-  padding: 1.5em 0 0.5em;
+  padding: 6.5em 0 0.5em;
 }
 
  .z-pad-100 {
