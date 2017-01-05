@@ -17,6 +17,7 @@
   height:300px;
 }
 .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
 .z-mar-100 {
   margin-top: 120px;
 }
@@ -762,3 +763,10 @@ h3.cate {
 .single {
   padding: 1.5em 0 0.5em;
 }
+
+ .z-pad-100 {
+	 padding-top: 100px;
+}
+ .z-product-item {
+   padding: 30px;
+ }
