@@ -815,3 +815,9 @@ h3.cate {
   font-weight: 600;
   letter-spacing: 3px;
 }
+/* single carousel*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
