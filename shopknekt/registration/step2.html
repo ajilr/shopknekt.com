@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+  <meta charset="utf-8">
+  <title>SHOPTKNEKT || HOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="pinegrow, blocks, bootstrap" />
+  <meta name="description" content="My new website" />
+  <link rel="icon" type="image/png" href="http://www.shopknekt.com/favicon/favicon-16x16.png" sizes="16x16" />
+  <!-- Core CSS -->
+  <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <!-- Style Library -->
+  <link href="css/style-library-1.css" rel="stylesheet">
+  <link href="css/plugins.css" rel="stylesheet">
+  <link href="css/blocks.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="components/pg.blocks/css/style-library-1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.2/select2.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/z-framework.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/3.2/select2.min.js"></script>
+  <!-- <script>
+  $(function() {
+  $('#colorselector').change(function(){
+  $('.colors').hide();
+  $('#' + $(this).val()).show();
+});
+});
+</script> -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $("select").change(function(){
+    $(this).find("option:selected").each(function(){
+      if($(this).attr("value")=="fasion"){
+        $(".fasion").show();
+      }
+      else if($(this).attr("value")=="accessories"){
+        $(".accessories").show();
+      }
+      else if($(this).attr("value")=="electronics"){
+        $(".electronics").show();
+      }
+      else if($(this).attr("value")=="furniture"){
+        $(".furniture").show();
+      }
+      else if($(this).attr("value")=="jewelry"){
+        $(".jewelry").show();
+      }
+      else if($(this).attr("value")=="sports"){
+        $(".sports").show();
+      }
+      else if($(this).attr("value")=="tools"){
+        $(".tools").show();
+      }
+      else if($(this).attr("value")=="toys"){
+        $(".toys").show();
+      }
+    });
+  }).change();
+});
+</script>
+</head>
+<body data-spy="scroll" data-target="nav">
+  <header id="header-2" class="soft-scroll header-2">
+    <nav class="main-nav navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#">
+            <img src="images/logo.svg" class="brand-img img-responsive" width="100%">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pages <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Dropdown 1</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 2</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 3</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 4</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 5</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 6</a>
+                </li>
+              </ul>
+            </li>
+            <!-- /.dropdown -->
+            <li class="nav-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+
+
+  <div class="pad-70">
+    <section id="content-2-7" class="content-block content-2-7">
+      <div class="overlay overlay-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="lnr lnr-shirt"></span>
+              </div>
+              <div class="counter-text">
+                <h3 class="counter">FASION</h3>
+              </div>
+            </div>
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-briefcase"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">ACCESSORIES</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-laptop"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">ELECTRONICS</h4>
+                <span></span>
+              </div>
+            </div>
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-home"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">FURNITURE</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-diamond"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">JEWELRY</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-bicycle"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">SPORT</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-cogs"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">TOOLS</h4>
+              </div>
+            </div>
+            <div class="col-sm-3 text-center">
+              <div class="counter-icon">
+                <span class="fa fa-car"></span>
+              </div>
+              <div class="counter-text">
+                <h4 class="counter">TOYS</h4>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+        <form role="form">
+          <section id="content-3-8" class="content-block content-3-8 category">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="underlined-title text-left">
+                    <h1>Select Your Categories</h1>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+
+              <select multiple id="colorselector" style="width:300px" class="z-multiselect" placeholder="Select the categories" >
+                <option value="fasion">Fasion</option>
+                <option value="accessories">Accessories</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="jewelry">Jewelry</option>
+                <option value="sports">Sports</option>
+                <option value="tools">Tools</option>
+                <option value="toys">Toys</option>
+              </select>
+
+              <div class="output">
+                <div id="fasion" class="colors fasion">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>FASION</h2>
+                      </div>
+                    </div>
+
+
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="pill" href="#home">MENS</a></li>
+                      <li><a data-toggle="pill" href="#menu1">WOMENS</a></li>
+                      <li><a data-toggle="pill" href="#menu2">KIDS</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                      <div id="home" class="tab-pane fade in active">
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Dresses</a></li>
+                            <li><input type="checkbox"> Blouses & Shirts</a></li>
+                            <li><input type="checkbox"> Jackets & Coats</a></li>
+                            <li><input type="checkbox"> Accessories</a></li>
+                            <li><input type="checkbox"> Bottoms</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Intimates</a></li>
+                            <li><input type="checkbox"> Jumpsuits</a></li>
+                            <li><input type="checkbox"> Jackets & Coats</a></li>
+                            <li><input type="checkbox"> Suits & Sets</a></li>
+                            <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Socks & Hosiery</a></li>
+                            <li><input type="checkbox"> Sleep & Lounge</a></li>
+                            <li><input type="checkbox"> Sweaters</a></li>
+                            <li><input type="checkbox"> Rompers</a></li>
+                            <li><input type="checkbox"> Bodysuits</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <img src='images/mens_fasion.jpg' class="img-responsive" height="130px" width="130px"/>
+                        </div>
+                      </div>
+
+                      <div id="menu1" class="tab-pane fade">
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Dresses</a></li>
+                            <li><input type="checkbox"> Blouses & Shirts</a></li>
+                            <li><input type="checkbox"> Jackets & Coats</a></li>
+                            <li><input type="checkbox"> Accessories</a></li>
+                            <li><input type="checkbox"> Bottoms</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Intimates</a></li>
+                            <li><input type="checkbox"> Jumpsuits</a></li>
+                            <li><input type="checkbox"> Jackets & Coats</a></li>
+                            <li><input type="checkbox"> Suits & Sets</a></li>
+                            <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Socks & Hosiery</a></li>
+                            <li><input type="checkbox"> Sleep & Lounge</a></li>
+                            <li><input type="checkbox"> Sweaters</a></li>
+                            <li><input type="checkbox"> Rompers</a></li>
+                            <li><input type="checkbox"> Bodysuits</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <img src='images/women_fasion.jpg' class="img-responsive" height="130px" width="130px"/>
+                        </div>
+                      </div>
+
+                      <div id="menu2" class="tab-pane fade">
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Dresses</a></li>
+                            <li><input type="checkbox"> Blouses & Shirts</a></li>
+                            <li><input type="checkbox"> Jackets & Coats</a></li>
+                            <li><input type="checkbox"> Accessories</a></li>
+                            <li><input type="checkbox"> Bottoms</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Intimates</a></li>
+                            <li><input type="checkbox"> Jumpsuits</a></li>
+                            <li><input type="checkbox"> Jackets & Coats</a></li>
+                            <li><input type="checkbox"> Suits & Sets</a></li>
+                            <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul>
+                            <li><input type="checkbox"> Socks & Hosiery</a></li>
+                            <li><input type="checkbox"> Sleep & Lounge</a></li>
+                            <li><input type="checkbox"> Sweaters</a></li>
+                            <li><input type="checkbox"> Rompers</a></li>
+                            <li><input type="checkbox"> Bodysuits</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <img src='images/kids_fasion.jpg' class="img-responsive" height="130px" width="130px"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="accessories" class="colors accessories">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Accessories</h2>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Mobile Phone LCDs</a></li>
+                        <li><input type="checkbox"> Mobile Phone Accessories</a></li>
+                        <li><input type="checkbox"> Communication Equipments</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Mobile Phone</a></li>
+                        <li><input type="checkbox"> Touch Panel</a></li>
+                        <li><input type="checkbox"> Phone Bags & Cases</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Mobile Phone Parts</a></li>
+                        <li><input type="checkbox"> Mobile Phones Power Bank</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img src='images/electronics.png' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="electronics" class="colors electronics">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Electronics</h2>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Kitchen,Dining & Bar</a></li>
+                        <li><input type="checkbox"> Home Decor</a></li>
+                        <li><input type="checkbox"> Home Textile </a></li>
+                        <li><input type="checkbox"> Garden Supplies</a></li>
+                        <li><input type="checkbox"> Bottoms</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Arts,Crafts & Sewing</a></li>
+                        <li><input type="checkbox"> Festive & Party Supplies</a></li>
+                        <li><input type="checkbox"> Bathroom Products</a></li>
+                        <li><input type="checkbox"> Household Merchandises</a></li>
+                        <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Housekeeping & Organization</a></li>
+                        <li><input type="checkbox"> Sleep & Lounge</a></li>
+                        <li><input type="checkbox"> Pet Products</a></li>
+                        <li><input type="checkbox"> Rompers</a></li>
+                        <li><input type="checkbox"> Bodysuits</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <img src='images/home_appliances.jpeg' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="furniture" class="colors furniture">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Furniture</h2>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Kitchen,Dining & Bar</a></li>
+                        <li><input type="checkbox"> Home Decor</a></li>
+                        <li><input type="checkbox"> Home Textile </a></li>
+                        <li><input type="checkbox"> Garden Supplies</a></li>
+                        <li><input type="checkbox"> Bottoms</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Arts,Crafts & Sewing</a></li>
+                        <li><input type="checkbox"> Festive & Party Supplies</a></li>
+                        <li><input type="checkbox"> Bathroom Products</a></li>
+                        <li><input type="checkbox"> Household Merchandises</a></li>
+                        <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Housekeeping & Organization</a></li>
+                        <li><input type="checkbox"> Sleep & Lounge</a></li>
+                        <li><input type="checkbox"> Pet Products</a></li>
+                        <li><input type="checkbox"> Rompers</a></li>
+                        <li><input type="checkbox"> Bodysuits</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <img src='images/home_appliances.jpeg' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="jewelry" class="colors jewelry">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Jewelry</h2>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Kitchen,Dining & Bar</a></li>
+                        <li><input type="checkbox"> Home Decor</a></li>
+                        <li><input type="checkbox"> Home Textile </a></li>
+                        <li><input type="checkbox"> Garden Supplies</a></li>
+                        <li><input type="checkbox"> Bottoms</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Arts,Crafts & Sewing</a></li>
+                        <li><input type="checkbox"> Festive & Party Supplies</a></li>
+                        <li><input type="checkbox"> Bathroom Products</a></li>
+                        <li><input type="checkbox"> Household Merchandises</a></li>
+                        <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Housekeeping & Organization</a></li>
+                        <li><input type="checkbox"> Sleep & Lounge</a></li>
+                        <li><input type="checkbox"> Pet Products</a></li>
+                        <li><input type="checkbox"> Rompers</a></li>
+                        <li><input type="checkbox"> Bodysuits</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <img src='images/home_appliances.jpeg' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="sports" class="colors sports">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Sports</h2>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Kitchen,Dining & Bar</a></li>
+                        <li><input type="checkbox"> Home Decor</a></li>
+                        <li><input type="checkbox"> Home Textile </a></li>
+                        <li><input type="checkbox"> Garden Supplies</a></li>
+                        <li><input type="checkbox"> Bottoms</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Arts,Crafts & Sewing</a></li>
+                        <li><input type="checkbox"> Festive & Party Supplies</a></li>
+                        <li><input type="checkbox"> Bathroom Products</a></li>
+                        <li><input type="checkbox"> Household Merchandises</a></li>
+                        <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Housekeeping & Organization</a></li>
+                        <li><input type="checkbox"> Sleep & Lounge</a></li>
+                        <li><input type="checkbox"> Pet Products</a></li>
+                        <li><input type="checkbox"> Rompers</a></li>
+                        <li><input type="checkbox"> Bodysuits</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <img src='images/home_appliances.jpeg' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="tools" class="colors tools">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Tools</h2>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Kitchen,Dining & Bar</a></li>
+                        <li><input type="checkbox"> Home Decor</a></li>
+                        <li><input type="checkbox"> Home Textile </a></li>
+                        <li><input type="checkbox"> Garden Supplies</a></li>
+                        <li><input type="checkbox"> Bottoms</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Arts,Crafts & Sewing</a></li>
+                        <li><input type="checkbox"> Festive & Party Supplies</a></li>
+                        <li><input type="checkbox"> Bathroom Products</a></li>
+                        <li><input type="checkbox"> Household Merchandises</a></li>
+                        <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Housekeeping & Organization</a></li>
+                        <li><input type="checkbox"> Sleep & Lounge</a></li>
+                        <li><input type="checkbox"> Pet Products</a></li>
+                        <li><input type="checkbox"> Rompers</a></li>
+                        <li><input type="checkbox"> Bodysuits</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <img src='images/home_appliances.jpeg' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="toys" class="colors toys">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="underlined-title text-left">
+                        <h2>Toys</h2>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Kitchen,Dining & Bar</a></li>
+                        <li><input type="checkbox"> Home Decor</a></li>
+                        <li><input type="checkbox"> Home Textile </a></li>
+                        <li><input type="checkbox"> Garden Supplies</a></li>
+                        <li><input type="checkbox"> Bottoms</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Arts,Crafts & Sewing</a></li>
+                        <li><input type="checkbox"> Festive & Party Supplies</a></li>
+                        <li><input type="checkbox"> Bathroom Products</a></li>
+                        <li><input type="checkbox"> Household Merchandises</a></li>
+                        <li><input type="checkbox"> Hoodies & Sweatshirts</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                      <ul>
+                        <li><input type="checkbox"> Housekeeping & Organization</a></li>
+                        <li><input type="checkbox"> Sleep & Lounge</a></li>
+                        <li><input type="checkbox"> Pet Products</a></li>
+                        <li><input type="checkbox"> Rompers</a></li>
+                        <li><input type="checkbox"> Bodysuits</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <img src='images/home_appliances.jpeg' class="img-responsive" height="130px" width="130px"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button href="" class='btn btn-success center-block'>Proceed To Next Step</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </section>
+    <br />
+    <footer class="content-block-nopad bg-deepocean footer-wrap-1-3" id="footer">
+      <div class="container footer-1-3">
+        <div class="col-md-4 pull-left">
+          <ul class="social social-light">
+            <li>
+              <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-2x fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-2x fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-2x fa-behance"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-2x fa-dribbble"></i></a>
+            </li>
+          </ul>
+          <!-- /.social -->
+        </div>
+        <div class="col-md-3 pull-right">
+          <p class="address-bold-line">We <i class="fa fa-heart pomegranate"></i> our amazing customers</p>
+          <p class="address small">
+            123 Anywhere Street,<br>
+            London,<br>
+            LO4 6ON</p>
+          </div>
+          <div class="col-xs-12 footer-text">
+            <p>Please take a few minutes to read our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </div>
+    <script>
+    $("#colorselector").select2();
+    $("#checkbox").click(function(){
+      if($("#checkbox").is(':checked') ){
+        $("#colorselector > option").prop("selected","selected");
+        $("#e1").trigger("change");
+      }else{
+        $("#e1 > option").removeAttr("selected");
+        $("#e1").trigger("change");
+      }
+    });
+
+    $("#button").click(function(){
+      alert($("#colorselector").val());
+    });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  </body>
+  </html>
