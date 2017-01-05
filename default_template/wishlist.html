@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Wishlist Page</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Shopknekt</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="admin.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Admin User</span></a></li>
+
+          <li><a href="account.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Account</span></a></li>
+          <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</span></a></li>
+          <li><a href="wishlist.html"><i class="fa fa-star-o"></i> Wishlist</span></a></li>
+          <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span></a></li>
+
+        </ul>
+        <input type="text" name="search" placeholder="Search.." class="form-control">
+
+
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <div id="all">
+
+          <div id="content">
+              <div class="container z-pad-100">
+
+                  <div class="col-md-12">
+
+                      <div class="box text-center">
+
+                          <div class="row">
+                              <div class="col-sm-10 col-sm-offset-1">
+                                  <h1>My wishlist</h1>
+
+                                  <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+
+
+                  <section>
+                    <div class="container">
+                      <table id="cart" class="table table-hover table-condensed table-striped table-bordered">
+                        <thead>
+                          <tr class="z-tr-s">
+                            <th style="width:50%">Product</th>
+                            <th style="width:10%">Price</th>
+                            <th style="width:8%">Quantity</th>
+                            <th style="width:22%" class="text-center">Subtotal</th>
+                            <th style="width:10%"></th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td data-th="Product">
+                              <div class="row">
+                                <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+                                <div class="col-sm-10">
+                                  <h4 class="nomargin">Product 1</h4>
+                                  <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                </div>
+                              </div>
+                            </td>
+
+                            <td data-th="Price" class="text-center">$1.99</td>
+
+                            <td data-th="Quantity">
+                              <input type="number" class="form-control text-center" value="1">
+                            </td>
+
+                            <td data-th="Subtotal" class="text-center">1.99</td>
+
+                            <td class="actions " data-th="">
+                              <a href="cart.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                              <a href="" class="btn btn-primary  center-block" ><i class="fa fa-trash-o" aria-hidden="true"></i>Remove</a>
+
+                            </td>
+
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr>
+                            <td data-th="Product">
+                              <div class="row">
+                                <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+                                <div class="col-sm-10">
+                                  <h4 class="nomargin">Product 1</h4>
+                                  <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                </div>
+                              </div>
+                            </td>
+
+                            <td data-th="Price" class="text-center">$1.99</td>
+
+                            <td data-th="Quantity">
+                              <input type="number" class="form-control text-center" value="1">
+                            </td>
+
+                            <td data-th="Subtotal" class="text-center">1.99</td>
+
+                            <td class="actions" data-th="">
+                              <a href="cart.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                              <a href="" class="btn btn-primary center-block"><i class="fa fa-trash-o" aria-hidden="true"></i>Remove</a>
+
+                            </td>
+
+                          </tr>
+                        </tbody>
+
+
+
+                        <tbody>
+                          <tr>
+                            <td data-th="Product">
+                              <div class="row">
+                                <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+                                <div class="col-sm-10">
+                                  <h4 class="nomargin">Product 1</h4>
+                                  <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                </div>
+                              </div>
+                            </td>
+
+                            <td data-th="Price" class="text-center">$1.99</td>
+
+                            <td data-th="Quantity">
+                              <input type="number" class="form-control text-center" value="1">
+                            </td>
+
+                            <td data-th="Subtotal" class="text-center">1.99</td>
+
+                            <td class="actions" data-th="">
+                              <a href="cart.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                              <a href="" class="btn btn-primary center-block"><i class="fa fa-trash-o" aria-hidden="true"></i>Remove</a>
+
+                            </td>
+
+                          </tr>
+                        </tbody>
+
+                        <tfoot>
+                          <tr class="visible-xs">
+                            <td class="text-center"><strong>Total 1.99</strong></td>
+                          </tr>
+
+
+                        </tfoot>
+
+                      </table>
+                    </div>
+
+
+
+
+                  </section>
+
+
+
+
+
+</body>
+</html>
