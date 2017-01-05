@@ -800,16 +800,16 @@ h3.cate {
   text-align: center;
 }
 
-.nav-tabs.nav-justified {
+.main .nav-tabs.nav-justified {
     border-top: 3px solid #000;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.main .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   border-top: 5px solid #000!important;
   border-radius: 0px;
 }
 
-.nav-tabs>li>a, .nav-tabs>li>a, .nav-tabs>li>a {
+.main .nav-tabs>li>a, .nav-tabs>li>a, .nav-tabs>li>a {
   border: none!important;
   color: #000;
   font-weight: 600;
