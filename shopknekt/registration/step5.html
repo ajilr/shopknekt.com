@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+  <meta charset="utf-8">
+  <title>SHOPTKNEKT || HOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="pinegrow, blocks, bootstrap" />
+  <meta name="description" content="My new website" />
+  <link rel="icon" type="image/png" href="http://www.shopknekt.com/favicon/favicon-16x16.png" sizes="16x16" />
+  <!-- Core CSS -->
+  <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+  <!-- Style Library -->
+  <link href="css/style-library-1.css" rel="stylesheet">
+  <link href="css/blocks.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+      var $target = $(e.target);
+
+      if ($target.parent().hasClass('disabled')) {
+        return false;
+      }
+    });
+
+    $(".next-step").click(function (e) {
+
+      var $active = $('.wizard .nav-tabs li.active');
+      $active.next().removeClass('disabled');
+      nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+      var $active = $('.wizard .nav-tabs li.active');
+      prevTab($active);
+
+    });
+  });
+
+  function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+  }
+  function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+  }
+  </script>
+  <script src="js/z-framework.js"></script>
+  <script type="text/javascript">
+  function ShowHideDiv(chkPassport) {
+    var dvPassport = document.getElementById("dvPassport");
+    dvPassport.style.display = chkPassport.checked ? "block" : "none";
+  }
+  </script>
+</head>
+<body data-spy="scroll" data-target="nav">
+  <header id="header-2" class="soft-scroll header-2">
+    <nav class="main-nav navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#">
+            <img src="images/logo.svg" class="brand-img img-responsive" width="100%">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <a href="step1.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Pages <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Dropdown 1</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 2</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 3</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 4</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 5</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown 6</a>
+                </li>
+              </ul>
+            </li>
+            <!-- /.dropdown -->
+            <li class="nav-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <div class="container  container-custom-width">
+    <h2 class="text-center">KYC FORM</h2>
+    <div class="wizard">
+      <div class="wizard-inner">
+        <div class="connecting-line"></div>
+        <ul class="nav nav-tabs" role="tablist">
+
+          <li role="presentation" class="active">
+            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="LOREM">
+              <span class="round-tab">
+                <i class="fa fa-users"></i>
+              </span>
+              <h5 class="z-segment-title">Lorem</h5>
+            </a>
+          </li>
+
+          <li role="presentation" class="disabled">
+            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="ADDRESS">
+              <span class="round-tab">
+                <i class="fa fa-briefcase"></i>
+              </span>
+              <h5 class="z-segment-title">Address</h5>
+            </a>
+          </li>
+
+          <li role="presentation" class="disabled">
+            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="CONTACT">
+              <span class="round-tab">
+                <i class="fa fa-phone"></i>
+              </span>
+              <h5 class="z-segment-title">Contact</h5>
+            </a>
+          </li>
+
+          <li role="presentation" class="disabled">
+            <a href="#step4" data-toggle="tab" aria-controls="complete" role="tab" title="LOREM IPSUM">
+              <span class="round-tab">
+                <i class="fa fa-user"></i>
+              </span>
+              <h5 class="z-segment-title">Account</h5>
+            </a>
+          </li>
+
+          <li role="presentation" class="disabled">
+            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="ACCOUNT DETAILS">
+              <span class="round-tab">
+                <i class=" fa fa-credit-card-alt"></i>
+              </span>
+              <h5 class="z-segment-title">Account</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form role="form">
+        <div class="tab-content">
+          <div class="tab-pane active" role="tabpanel" id="step1">
+            <form id="z_contact_form" method="post" data-parsley-validate="" action="/savecontact">
+              <div class="row">
+                <div class="z-main-select">
+                  <h5>
+                    <span>Are You Assisted by an agent?</span>
+                    <label class="switch">
+                      <input type="checkbox" id="chkPassport" onclick="ShowHideDiv(this)">
+                      <div class="slider"></div>
+                    </label>
+                  </h5>
+                  <div id="dvPassport" style="display: none">
+                    <select class="selectpicker form-control text-box" id="txtPassportNumber" >
+                      <option>Select your agent.</option>
+                      <option>Name1</option>
+                      <option>Relish</option>
+                      <option>Linto</option>
+                      <option>Ritul</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <ul class="list-inline pull-right">
+              <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+            </ul>
+          </div>
+          <div class="tab-pane" role="tabpanel" id="step2">
+            <form id="z_contact_form" method="post" data-parsley-validate="" action="/savecontact">
+              <div class="row">
+                <div class="z-main-select">
+                  <h3 class="text-center">Address</h3>
+                  <div class="row">
+                    <div data-pg-collapsed class="col-md-6">
+                      <h4 class="text-center">Personal Address</h4>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Name" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Name !!!" data-parsley-required-message="Verify Your Name !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Role In The Company" name="role" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Role !!!" data-parsley-required-message="Verify Your Role !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Address" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Address !!!" data-parsley-required-message="Verify Your Address !!!" />
+                        <input class="text-box form-control" type="text" placeholder="Address Field 1" name="name"/>
+                        <input class="text-box form-control" type="text" placeholder="Address Field 2" name="name" />
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="City" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your City !!!" data-parsley-required-message="Verify Your City !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="State" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your State !!!" data-parsley-required-message="Verify Your State !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Country" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Country !!!" data-parsley-required-message="Verify Your Country !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Zip Code" name="aadhar" required="" minlength="6" size="6" data-parsley-minlength="6" data-parsley-minlength-message="Verify zip code (6 digits)" data-parsley-required-message="Please verify your zip code !!!"/>
+                      </div>
+                    </div>
+
+                    <div data-pg-collapsed class="col-md-6">
+                      <h4 class="text-center">Office Address</h4>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Shop Name" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Name !!!" data-parsley-required-message="Verify Your Shop Name !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Address" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Name !!!" data-parsley-required-message="Please enter your Address !!!"/>
+                        <input class="text-box form-control" type="text" placeholder="Address Field 1" name="name"/>
+                        <input class="text-box form-control" type="text" placeholder="Address Field 2" name="name"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="City" name="city" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your City !!!" data-parsley-required-message="Verify Your City !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="State" name="state" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your State !!!" data-parsley-required-message="Verify Your State !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="Country" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Country !!!" data-parsley-required-message="Verify Your Country !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Zip Code" name="zip" required="" minlength="6" size="6" data-parsley-minlength="6" data-parsley-minlength-message="Verify zip code (6 digits)" data-parsley-required-message="Please verify your zip code !!!"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <ul class="list-inline pull-right">
+              <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+              <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+            </ul>
+          </div>
+          <div class="tab-pane" role="tabpanel" id="step3">
+            <form id="z_contact_form" method="post" data-parsley-validate="" action="/savecontact">
+              <div class="row">
+                <div class="z-main-select">
+                  <h3 class="text-center">Contact Info</h3>
+                  <div class="row">
+                    <div data-pg-collapsed class="col-md-6">
+                      <h4 class="text-center">Personal Contact</h4>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Landline Number" name="phone" required="" minlength="10" size="10" data-parsley-minlength="10" data-parsley-minlength-message="Verify Aadhar (12 digits)" data-parsley-required-message="Please verify your Mobile Number !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Mobile Number" name="phone" required="" minlength="10" size="10" data-parsley-minlength="10" data-parsley-minlength-message="Verify Aadhar (12 digits)" data-parsley-required-message="Please verify your Mobile Number !!!"/>
+                      </div>
+                      <p>* Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <div data-pg-collapsed class="col-md-6">
+                      <h4 class="text-center">Business Contact</h4>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Landline Number" name="phone" required="" minlength="10" size="10" data-parsley-minlength="10" data-parsley-minlength-message="Verify Aadhar (12 digits)" data-parsley-required-message="Please verify your Mobile Number !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Mobile Number" name="aadhar" required="" minlength="12" size="12" data-parsley-minlength="12" data-parsley-minlength-message="Verify Aadhar (12 digits)" data-parsley-required-message="Please verify your Mobile Number !!!"/>
+                      </div>
+                      <p>* Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <ul class="list-inline pull-right">
+              <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+              <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" role="tabpanel" id="step4">
+            <form id="z_contact_form" method="post" data-parsley-validate="" action="/savecontact">
+              <div class="row">
+                <div class="z-main-select">
+                  <h3 class="text-center">Identity Details</h3>
+                  <div class="row">
+                    <div data-pg-collapsed class="col-md-6">
+                      <h4 class="text-center">Lorem Ipsum</h4>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="Aadhar" name="aadhar" required="" minlength="12" size="12" data-parsley-minlength="1" data-parsley-minlength-message="Verify Aadhar (12 digits)" data-parsley-required-message="Please verify your aadhar card number !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="PAN Card Number" name="pan" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your PAN Card Number !!!" data-parsley-required-message="Verify Your PAN Card Number !!!"/>
+                      </div>
+                      <p>* Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <div data-pg-collapsed class="col-md-6">
+                      <h4 class="text-center">Lorem Ipsum</h4>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="CST" name="cst" required="" minlength="30" size="30" data-parsley-minlength="3" data-parsley-minlength-message="Verify CST" data-parsley-required-message="Please verify your CST !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="number" placeholder="VAT/TIN" name="tin" required="" minlength="30" size="30" data-parsley-minlength="3" data-parsley-minlength-message="Verify VAT/TIN (30 digits)" data-parsley-required-message="Please verify your VAT/TIN Number !!!"/>
+                      </div>
+                      <div class="form-group" data-pg-collapsed data-pg-hidden>
+                        <input class="text-box form-control" type="text" placeholder="PAN Card Number" name="pan" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your PAN Card Number !!!" data-parsley-required-message="Verify Your PAN Card Number !!!"/>
+                      </div>
+                      <p>* Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <ul class="list-inline pull-right">
+              <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+              <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+            </ul>
+          </div>
+
+          <div class="tab-pane" role="tabpanel" id="complete">
+            <div class="z-main-select">
+              <h3 class="text-center">Account Info</h3>
+              <div class="form-group" data-pg-collapsed data-pg-hidden>
+                <input class="text-box form-control" type="text" placeholder="Account Holder Name" name="name" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Name !!!" data-parsley-required-message="Verify Your Name !!!"/>
+              </div>
+              <div class="form-group" data-pg-collapsed data-pg-hidden>
+                <input class="text-box form-control" type="number" placeholder="Account Number" name="accno" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Account Number !!!" data-parsley-required-message="Verify Your Account Number !!!"/>
+              </div>
+              <div class="form-group" data-pg-collapsed data-pg-hidden>
+                <input class="text-box form-control" type="text" placeholder="Bank Name" name="bankname" required="" maxlength="60" size="60" data-parsley-minlength="2" data-parsley-minlength-message="Verify Your Bank Name !!!" data-parsley-required-message="Verify Your Bank Name !!!"/>
+              </div>
+              <div class="form-group" data-pg-collapsed data-pg-hidden>
+                <input class="text-box form-control" type="text" placeholder="IFSC Code" name="ifsc" required="" maxlength="60" size="60" data-parsley-minlength="3" data-parsley-minlength-message="Verify Your Bank IFSC Code !!!" data-parsley-required-message="Verify Your Bank IFSC Code !!!"/>
+              </div>
+              <p>* Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <ul class="list-inline pull-right">
+              <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+              <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</form>
+</div>
+<br />
+
+<footer class="content-block-nopad bg-deepocean footer-wrap-1-3">
+  <div class="container footer-1-3">
+    <div class="col-md-4 pull-left">
+      <ul class="social social-light">
+        <li>
+          <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-2x fa-google-plus"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-2x fa-pinterest"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-2x fa-behance"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-2x fa-dribbble"></i></a>
+        </li>
+      </ul>
+      <!-- /.social -->
+    </div>
+    <div class="col-md-3 pull-right">
+      <p class="address-bold-line">We <i class="fa fa-heart pomegranate"></i> our amazing customers</p>
+      <p class="address small">
+        123 Anywhere Street,<br>
+        London,<br>
+        LO4 6ON
+      </p>
+    </div>
+    <div class="col-xs-12 footer-text">
+      <p>Please take a few minutes to read our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+    </div>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
