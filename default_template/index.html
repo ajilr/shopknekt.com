@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>ShopKnekt</title>
-  <!--CSS -->
+
+  <!--css-->
   <link rel="shortcut icon" href="../favicon.ico">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
+  <!-- css-end -->
 </head>
-
 <body>
-
-  <!-- Navigation -->
   <div class="container-fluid ">
+    <!--navbar-->
     <nav class="navbar navbar-fixed-top z-navtop" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -29,32 +26,30 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="col-sm-5 col-md-7">
+            <form class="navbar-form" role="search">
+              <div class="input-group stylish-input-group">
+                <input type="text" class="form-control" placeholder="Search" name="q">
+                <button class="btn btn-primary btn-custom" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </form>
+          </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="account.html"><i class="fa fa-user-circle" aria-hidden="true"></i> LogIn</span></a></li>
-            <li><a href="checkout.html" title="Checkout"><i class="fa fa-crosshairs">  Checkout</i></span></a></li>
-            <li><a href="wishlist.html" title="Wishlist"><i class="fa fa-heart fa-2x"></i>  </span></a></li>
+            <li><a href="account.html"><i class="fa fa-user-circle" aria-hidden="true"> LogIn</i></a></li>
+            <li><a href="checkout.html" title="Checkout"><i class="fa fa-crosshairs">  Checkout</i></a></li>
+            <li><a href="wishlist.html" title="Wishlist"><i class="fa fa-heart fa-2x"></i></a></li>
             <li><a href="cart.html" title="Cart"><i class="fa fa-shopping-cart  fa-2x" aria-hidden="true"></i></span></a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--//navbar-->
+    <!-- navbar-end -->
 
-    <!-- Page Content -->
+    <!-- searchbox -->
     <div class="container z-pad-100">
-      <div id="imaginary_container">
-                <div class="input-group stylish-input-group">
-                    <input type="text" class="form-control"  placeholder="Search" >
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div>
-            </div>
-      <br /><br />
+      <!-- sidebar -->
       <div class="row">
-        <div id="sidebar" class="col-md-2">
+        <div id="sidebar" class="col-md-3">
           <div class=" well-small">
             <ul class="nav nav-list">
               <li class="dropdown">
@@ -215,7 +210,7 @@
               </li>
             </ul>
           </div>
-          <!--//side bar--->
+
 
           <div>
             <img class="img-responsive img-side " src="images/indian.jpg" alt="">
@@ -225,17 +220,12 @@
             <a href="#"><img class="img-responsive " src="images/paypal.jpg" alt="payment method paypal"></a>
           </div>
         </div>
+        <!-- sidebar-end -->
 
+        <!-- mainpage-content -->
         <div class="col-md-9">
+          <!-- carousel -->
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <!-- carousel items -->
@@ -291,16 +281,17 @@
 
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="fa fa-angle-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="fa fa-angle-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
+          <!-- carousel-end -->
 
-          <!-- Codrops top bar -->
+          <!-- categories -->
           <div class="main"  style="padding: 0px 40px;">
             <h3>Categories</h3>
             <br />
@@ -342,62 +333,54 @@
       </div>
     </div>
   </div>
-
-
+  <!-- categories-end -->
+<br /><br />
   <!-- footer -->
-  <div class="footer">
+  <section class="footer">
     <div class="container">
-      <div class="w3_footer_grids">
-        <div class="col-md-3 w3_footer_grid">
-          <h3>Contact</h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-        </div>
-        <div class="col-md-3 w3_footer_grid">
-          <h3>Information</h3>
-          <ul class="info">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="mail.html">Contact Us</a></li>
-
-            <li><a href="faq.html">FAQ's</a></li>
-            <li><a href="products.html">Special Products</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 w3_footer_grid">
-          <h3>Category</h3>
-          <ul class="info">
-            <li><a href="dresses.html">Dresses</a></li>
-            <li><a href="sweaters.html">Sweaters</a></li>
-            <li><a href="shirts.html">Shirts</a></li>
-            <li><a href="sarees.html">Sarees</a></li>
-            <li><a href="skirts.html">Shorts & Skirts</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 w3_footer_grid">
-          <h3>Profile</h3>
-          <ul class="info">
-            <li><a href="products.html">Summer Store</a></li>
-            <li><a href="checkout.html">My Cart</a></li>
-          </ul>
-          <h4>Follow Us</h4>
-          <div class="agileits_social_button">
-            <ul class="address">
-              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-              <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-            </ul>
+      <div class="row">
+        <div class="col-sm-3 col-md-3">
+          <div class="z-logo-content">
+            <h3>Information</h3>
+            <p>Monday is a professional hair, beauty and spa salon located in the south side of Los Angeles.
+              With 15 000 square feet and more than 30 trained specialists.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-md-offset-2">
+            <div class="z-location-blocks">
+              <h3>Follow us on</h3>
+              <div class="z-social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-md-offset-1">
+            <h3 class="text-right">Subscribe</h3>
+            <div class="z-time-content">
+              <input type="text" placeholder="email" class="form-control" /><br/>
+              <button class="btn btn-default pull-right">Subscribe</button>
+            </div>
           </div>
         </div>
-        <div class="clearfix"> </div>
       </div>
-    </div>
-<hr />
-    <div class="container">
-      <p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://shopknekt.com/">shopknekt</a></p>
-    </div>
-  </div>
-  <!-- //footer -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span>
+              Created with <i class="fa fa-heart"></i> by <a href="http://www.shopknekt.com" class="shopknekt_link" target="_blank">shopknekt.com</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+  </html>

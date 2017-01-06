@@ -785,25 +785,11 @@ h3.cate {
 .catogory-tabs ul li p{
   text-align: center;
   color: #777;
-  letter-spacing: 3px;
+   letter-spacing: 3px;
 }
 
 .main .nav-tabs.nav-justified {
   border-top: 3px solid #000;
-}
-
-.main .nav-tabs>li.active>a, .main .nav-tabs>li.active>a:focus, .main .nav-tabs>li.active>a:hover {
-  border-top: 5px solid #000!important;
-  border-radius: 0px;
-  color: #d28bd0;
-}
-
-
-.main .nav-tabs>li>a,  .main.nav-tabs>li>a, .main .nav-tabs>li>a {
-  border: none!important;
-  color: #000;
-  font-weight: 600;
-  letter-spacing: 3px;
 }
 
 .z-check-s {
@@ -893,8 +879,8 @@ h3.cate {
 }
 .z-tr-s{
   color: #fFf;
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: #242223;
+  border-color: #242223;
 }
 .z-cart-s{
   color: #fFf;
@@ -973,82 +959,13 @@ h3.cate {
   background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
   background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
 }
-.z-btnlogin-s{
-  background-color: #59B2E0;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  height: auto;
-  font-weight: normal;
-  padding: 14px 0;
-  text-transform: uppercase;
-  border-color: #59B2E6;
-}
-.z-btnlogin-s:hover
-{
-  color: #fff;
-  background-color: #53A3CD;
-  border-color: #53A3CD;
-}
-.z-btnreg-s{
-  background-color: #59B2E0;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  height: auto;
-  font-weight: normal;
-  padding: 14px 0;
-  text-transform: uppercase;
-  border-color: #59B2E0;
-}
-.z-btnreg-s:hover
-{
-  color: #fff;
-  background-color: #59B2E0;
-  border-color:#59B2E0;
-}
+
 .z-tabpad{
   padding-top: 25px;
 }
-.btn-primary{
-  margin-top: 8px;
-}
+
 .z-tabpad1-s{
   padding-top: 100px;
-}
-.z-navtab-s .z-reg-s a{
-  color: #59B2E0;
-  font-size: 20px;
-}
-.z-navtab-s .z-active-s   a:hover
-{
-  background-color:  #59B2E0
-}
-.z-navtab-s .z-reg-s a:hover
-{
-  background-color:  #59B2E0
-}
-.z-navtab-s .z-active-s a{
-  color: #fff;
-  cursor: default;
-  background-color: #59B2E0;
-  font-size: 20px;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  color: #59b2e0;
-  cursor: default;
-  background-color: #fff;
-}
-
-.nav>li>a:hover {
-  text-decoration: none;
-  background-color: #fff;
-  color: #d28bd0;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-  color: #fff;
-  background-color: #59b2e0;
 }
 
 .stylish-input-group .input-group-addon{
@@ -1061,17 +978,166 @@ h3.cate {
   border-color:#ccc;
   border-radius: 0px;
 }
-.stylish-input-group button{
-  border:0;
-  background:transparent;
-  line-height: 10px;
-}
 
-#imaginary_container {
-  width: 50%;
-  margin: 0 auto;
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+    line-height: 10px;
+    position: absolute;
+    border-left: 0px;
+    border-radius: 0px;
+    line-height: 20px;
 }
 
 .navbar-nav>li>a {
-  color: #777;
+  color: #242223;
+}
+
+span.fa.fa-angle-right {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    width: 39px;
+}
+
+span.fa.fa-angle-left {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    width: 39px;
+    left: 0px;
+}
+
+.input-group.stylish-input-group {
+    margin: 0 auto;
+    width: 100%;
+    float: right;
+}
+
+.footer {
+  background: rgb(234, 234, 234);
+  padding-bottom: 40px;
+}
+
+.z-logo-content p{
+  font-size: 18px;
+}
+
+.z-logo-content p{
+  font-size: 18px;
+}
+
+.z-social-icons .fa{
+  background:rgb(35, 33, 34);
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+footer.main-footer {
+  background: #242223;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/*tabs*/
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+    border: none;
+    background: #242223;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-bottom: 1px solid #ddd;
+    background: #eaeaea;
+    border-radius: 0px;
+    color: #242223;
+}
+
+/*.*/
+
+/*btn*/
+
+.btn-custom {
+    color: #fff!important;
+    background-color: #242223!important;
+    border-color: #eaeaea!important;
+    border-radius: 0px!important;
+}
+
+.btn-custom:hover {
+    color: #242223!important;
+    background-color: #eaeaea!important;
+    border-color: #242223!important;
+    border-radius: 0px!important;
+}
+/*.*/
+
+.panel-info>.panel-heading {
+    color: #ffffff;
+    background-color: #242223;
+    border-color: #242223;
+    border-radius: 0px;
+}
+
+.panel-info {
+    border: none;
+    border-radius: 0px;
+}
+
+.form-control {
+    padding: 0px;
+    font-size: 14px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    background: transparent;
+}
+.form-control:focus {
+    border: none!important;
+    box-shadow: none!important;
+    border-bottom: 2px solid #242223!important;
+}
+
+.z-left-tabs {
+  margin-left: -30px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #242223;
+}
+.nav-pills>li>a {
+    border-radius: 0px;
+    color: #242223;
+    text-transform: capitalize;
+}
+
+.nav-pills>li {
+  width: 100%;
+}
+
+
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    border: 0;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+     border: 0px solid #ddd!important;
 }
