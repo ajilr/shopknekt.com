@@ -263,19 +263,6 @@ div#OR {
 {
   margin-top: 150px !important;
 }
-.zoom_img img{
-  margin:50px;
-  height:100px;
-  width:100px;
-  -moz-transition:-moz-transform 0.5s ease-in;
-  -webkit-transition:-webkit-transform 0.5s ease-in;
-  -o-transition:-o-transform 0.5s ease-in;
-}
-.zoom_img img:hover{
-  -moz-transform:scale(2);
-  -webkit-transform:scale(2);
-  -o-transform:scale(2);
-}
 
 /*--single--*/
 .single-para h2 {
@@ -540,8 +527,9 @@ a.cart:hover{
   padding: 1em 0;
 }
 .col-md1 {
+    padding: 1em;
+    ;
   padding: 1em;
-  background-color: #eee;
 }
 
 .col-md1:hover .price a {
@@ -676,7 +664,7 @@ span.price-in1 {
   padding: 1em 0 0;
 }
 .grid {
-  width: 67%;
+  width: 32%;
 }
 
 /*--product--*/
@@ -684,7 +672,7 @@ span.price-in1 {
   font-size: 1.8em;
 }
 .products {
-  padding: 1.5em 0;
+  padding: 76px;
 }
 h3.cate {
   font-size: 1.2em;
@@ -737,7 +725,7 @@ h3.cate {
   padding: 0;
 }
 .single {
-  padding: 1.5em 0 0.5em;
+  padding: 6.5em 0 0.5em;
 }
 
 .z-pad-100 {
@@ -789,8 +777,28 @@ h3.cate {
 }
 
 .main .nav-tabs.nav-justified {
-  border-top: 3px solid #000;
+  border-top: 3px solid #66acca;
 }
+
+.main .nav-tabs>li.active>a, .main .nav-tabs>li.active>a:focus, .main .nav-tabs>li.active>a:hover {
+  border-top: 5px solid #66acca!important;
+  border-radius: 0px;
+  color: #fff;
+}
+
+
+.main .nav-tabs>li>a,  .main.nav-tabs>li>a, .main .nav-tabs>li>a {
+  border: none!important;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+/* single carousel*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
 
 .z-check-s {
   padding-top: 156px;
@@ -879,8 +887,8 @@ h3.cate {
 }
 .z-tr-s{
   color: #fFf;
-  background-color: #242223;
-  border-color: #242223;
+  background-color: #66acca;
+  border-color: #66acca;
 }
 .z-cart-s{
   color: #fFf;
@@ -990,7 +998,7 @@ h3.cate {
 }
 
 .navbar-nav>li>a {
-  color: #242223;
+  color: #66acca;
 }
 
 span.fa.fa-angle-right {
@@ -1040,7 +1048,7 @@ span.fa.fa-angle-left {
 }
 
 footer.main-footer {
-  background: #242223;
+  background: #66acca;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -1049,7 +1057,7 @@ footer.main-footer {
 /*tabs*/
 .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
     border: none;
-    background: #242223;
+    background: #66acca;
     color: #fff;
     border-radius: 0px;
 }
@@ -1058,7 +1066,7 @@ footer.main-footer {
     border-bottom: 1px solid #ddd;
     background: #eaeaea;
     border-radius: 0px;
-    color: #242223;
+    color: #66acca;
 }
 
 /*.*/
@@ -1067,23 +1075,23 @@ footer.main-footer {
 
 .btn-custom {
     color: #fff!important;
-    background-color: #242223!important;
+    background-color: #66acca!important;
     border-color: #eaeaea!important;
     border-radius: 0px!important;
 }
 
 .btn-custom:hover {
-    color: #242223!important;
+    color: #66acca!important;
     background-color: #eaeaea!important;
-    border-color: #242223!important;
+    border-color: #66acca!important;
     border-radius: 0px!important;
 }
 /*.*/
 
 .panel-info>.panel-heading {
     color: #ffffff;
-    background-color: #242223;
-    border-color: #242223;
+    background-color: #66acca;
+    border-color: #66acca;
     border-radius: 0px;
 }
 
@@ -1112,7 +1120,7 @@ footer.main-footer {
 .form-control:focus {
     border: none!important;
     box-shadow: none!important;
-    border-bottom: 2px solid #242223!important;
+    border-bottom: 2px solid #66acca!important;
 }
 
 .z-left-tabs {
@@ -1121,11 +1129,11 @@ footer.main-footer {
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
-    background-color: #242223;
+    background-color: #66acca;
 }
 .nav-pills>li>a {
     border-radius: 0px;
-    color: #242223;
+    color: #66acca;
     text-transform: capitalize;
 }
 
@@ -1140,4 +1148,18 @@ footer.main-footer {
 
 .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
      border: 0px solid #ddd!important;
+}
+/* single image zoom*/
+.zoom_img img{
+margin:50px;
+height:100px;
+width:100px;
+-moz-transition:-moz-transform 0.5s ease-in;
+-webkit-transition:-webkit-transform 0.5s ease-in;
+-o-transition:-o-transform 0.5s ease-in;
+}
+.zoom_img img:hover{
+-moz-transform:scale(2);
+-webkit-transform:scale(2);
+-o-transform:scale(2);
 }
