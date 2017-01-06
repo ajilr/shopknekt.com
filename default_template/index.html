@@ -29,28 +29,30 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="about.html">About</a>
-            </li>
-          </ul>
-
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="admin.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Admin User</span></a></li>
-            <li><a href="account.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Account</span></a></li>
-            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</span></a></li>
-            <li><a href="wishlist.html"><i class="fa fa-star-o"></i> Wishlist</span></a></li>
-            <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</span></a></li>
+            <li><a href="account.html"><i class="fa fa-user-circle" aria-hidden="true"></i> LogIn</span></a></li>
+            <li><a href="checkout.html" title="Checkout"><i class="fa fa-crosshairs">  Checkout</i></span></a></li>
+            <li><a href="wishlist.html" title="Wishlist"><i class="fa fa-heart fa-2x"></i>  </span></a></li>
+            <li><a href="cart.html" title="Cart"><i class="fa fa-shopping-cart  fa-2x" aria-hidden="true"></i></span></a></li>
           </ul>
-
-          <input type="text" name="search" placeholder="Search.." class="form-control">
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <!--//navbar-->
 
     <!-- Page Content -->
-    <div class="container z-mar-150">
+    <div class="container z-pad-100">
+      <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Search" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+      <br /><br />
       <div class="row">
         <div id="sidebar" class="col-md-2">
           <div class=" well-small">
@@ -238,52 +240,24 @@
             <div class="carousel-inner" role="listbox">
               <!-- carousel items -->
               <div class="item active">
-                <img src="img/1.jpg" class="img-responsive">
+                <img src="images/b1.jpg" class="img-responsive">
               </div>
 
               <div class="item">
-                <img src="img/2.jpg"  class="img-responsive">
+                <img src="images/b2.jpg"  class="img-responsive">
               </div>
 
               <div class="item">
-                <img src="img/3.jpg"  class="img-responsive">
+                <img src="images/b3.jpg"  class="img-responsive">
               </div>
 
               <div class="item">
-                <img src="img/4.jpg" class="img-responsive">
+                <img src="images/b4.png" class="img-responsive">
               </div>
 
-              <div class="item">
-                <img src="img/5.jpg" class="img-responsive">
-              </div>
 
-              <div class="item">
-                <img src="img/6.jpg" class="img-responsive">
-              </div>
 
-              <div class="item">
-                <img src="img/7.jpg" class="img-responsive">
-              </div>
 
-              <div class="item">
-                <img src="img/8.jpg" class="img-responsive">
-              </div>
-
-              <div class="item">
-                <img src="img/9.jpg" class="img-responsive">
-              </div>
-
-              <div class="item">
-                <img src="img/10.jpg" class="img-responsive">
-              </div>
-
-              <div class="item">
-                <img src="img/11.jpg" class="img-responsive">
-              </div>
-
-              <div class="item">
-                <img src="img/12.jpg" class="img-responsive">
-              </div>
               <!-- carousel items end -->
             </div>
 
@@ -342,65 +316,60 @@
   </div>
 
 
-<!-- footer -->
-<div class="footer">
-  <div class="container">
-    <div class="w3_footer_grids">
-      <div class="col-md-3 w3_footer_grid">
-        <h3>Contact</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-        <ul class="address">
-          <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-          <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-        </ul>
-      </div>
-      <div class="col-md-3 w3_footer_grid">
-        <h3>Information</h3>
-        <ul class="info">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="mail.html">Contact Us</a></li>
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="w3_footer_grids">
+        <div class="col-md-3 w3_footer_grid">
+          <h3>Contact</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+        </div>
+        <div class="col-md-3 w3_footer_grid">
+          <h3>Information</h3>
+          <ul class="info">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mail.html">Contact Us</a></li>
 
-          <li><a href="faq.html">FAQ's</a></li>
-          <li><a href="products.html">Special Products</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 w3_footer_grid">
-        <h3>Category</h3>
-        <ul class="info">
-          <li><a href="dresses.html">Dresses</a></li>
-          <li><a href="sweaters.html">Sweaters</a></li>
-          <li><a href="shirts.html">Shirts</a></li>
-          <li><a href="sarees.html">Sarees</a></li>
-          <li><a href="skirts.html">Shorts & Skirts</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 w3_footer_grid">
-        <h3>Profile</h3>
-        <ul class="info">
-          <li><a href="products.html">Summer Store</a></li>
-          <li><a href="checkout.html">My Cart</a></li>
-        </ul>
-        <h4>Follow Us</h4>
-        <div class="agileits_social_button">
-          <ul class="address">
-            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="products.html">Special Products</a></li>
           </ul>
         </div>
+        <div class="col-md-3 w3_footer_grid">
+          <h3>Category</h3>
+          <ul class="info">
+            <li><a href="dresses.html">Dresses</a></li>
+            <li><a href="sweaters.html">Sweaters</a></li>
+            <li><a href="shirts.html">Shirts</a></li>
+            <li><a href="sarees.html">Sarees</a></li>
+            <li><a href="skirts.html">Shorts & Skirts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 w3_footer_grid">
+          <h3>Profile</h3>
+          <ul class="info">
+            <li><a href="products.html">Summer Store</a></li>
+            <li><a href="checkout.html">My Cart</a></li>
+          </ul>
+          <h4>Follow Us</h4>
+          <div class="agileits_social_button">
+            <ul class="address">
+              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+              <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
       </div>
-      <div class="clearfix"> </div>
+    </div>
+<hr />
+    <div class="container">
+      <p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://shopknekt.com/">shopknekt</a></p>
     </div>
   </div>
-
-  <div class="container">
-    <p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://shopknekt.com/">shopknekt</a></p>
-  </div>
-</div>
-<!-- //footer -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- //footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
